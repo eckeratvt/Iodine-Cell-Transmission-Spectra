@@ -25,7 +25,7 @@ else
     sep='\';
 end
 
-name='profile_10-1.pzt'; %outputfile name
+name='profile_10-1'; %outputfile name
 
 voltage=34; %set voltage
 v=350; %expected velocity
@@ -54,8 +54,8 @@ fdr=vr*(o1-i)'/lambda;
 
 
 
-mkdir([path sep 'processed'])
-outputfile=[path sep 'processed' sep filename2 '.res'];
+mkdir([path2 sep 'processed'])
+outputfile=[path2 sep 'processed' sep name '.pzt'];
 
 [pathstr, name, ext] = fileparts([path2 sep filename2]);
 [pathstr2, name2, ext2] = fileparts([path sep filename]);
@@ -252,7 +252,7 @@ set(figure1, 'OuterPosition', [0 0 1 1 ]);
 xlim([min(xi) max(xi)])
 %ylim([Limits(3) Limits(4)])
 
-print('-depsc','-f1','-r300 ', [path sep 'processed' sep 'resultplot_transmission_k' name2 '_' name ]);
+print('-depsc','-f1','-r300 ', [path2 sep 'processed' sep 'resultplot_transmission_k' name2 '_' name ]);
 
 close all
 
@@ -289,7 +289,7 @@ set(figure1, 'OuterPosition', [0 0 1 1 ]);
 %xlim([min(xi) max(xi)])
 %ylim([Limits(3) Limits(4)])
 
-print('-depsc','-f1','-r300 ', [path sep 'processed' sep 'resultplot_transmission_f_non_norm' name2 '_' name ]);
+print('-depsc','-f1','-r300 ', [path2 sep 'processed' sep 'resultplot_transmission_f_non_norm' name2 '_' name ]);
 
 
 set_t=interp1(scan1(:,2),scan(:,3),voltage);
@@ -333,7 +333,7 @@ set(figure1, 'OuterPosition', [0 0 1 1 ]);
 %xlim([min(xi) max(xi)])
 %ylim([Limits(3) Limits(4)])
 
-print('-depsc','-f1','-r300 ', [path sep 'processed' sep 'resultplot_transmission_delta_f_non_norm' name2 '_' name ]);
+print('-depsc','-f1','-r300 ', [path2 sep 'processed' sep 'resultplot_transmission_delta_f_non_norm' name2 '_' name ]);
 
 
 
