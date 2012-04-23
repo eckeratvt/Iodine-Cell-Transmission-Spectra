@@ -186,9 +186,9 @@ Xi =data(ind,1)-18700;
 Yi=data(ind,2);
 
 f=figure(2)
-plot(Xi,Yi,'x-')
+plot(Xi,Yi,'-')
 hold on
-plot(xi,yi,'rx-')
+plot(xi,yi,'rx--')
 hold off
 
 end
