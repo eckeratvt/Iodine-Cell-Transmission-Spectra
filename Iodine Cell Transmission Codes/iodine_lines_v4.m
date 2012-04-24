@@ -258,7 +258,7 @@ set(figure1, 'OuterPosition', [0 0 1 1 ]);
 xlim([min(xi) max(xi)])
 %ylim([Limits(3) Limits(4)])
 ylim([0 1.0])
-print('-depsc','-f1','-r300 ', [path2 sep 'processed' sep 'resultplot_transmission_k' oname ]);
+print('-depsc','-f1','-r300 ', [path2 sep 'processed' sep oname '_resultplot_transmission_k']);
 
 
 %%
@@ -327,7 +327,7 @@ set(figure1, 'OuterPosition', [0 0 1 1 ]);
 %xlim([min(xi) max(xi)])
 %ylim([Limits(3) Limits(4)])
 ylim([0 1.0])
-print('-depsc','-f1','-r300 ', [path2 sep 'processed' sep 'resultplot_transmission_f_non_norm' oname ]);
+print('-depsc','-f1','-r300 ', [path2 sep 'processed' sep oname '_resultplot_transmission_f_non_norm']);
 
 close all
 
@@ -366,7 +366,7 @@ set(figure1, 'OuterPosition', [0 0 1 1 ]);
 %xlim([min(xi) max(xi)])
 ylim([0 1.0])
 
-print('-depsc','-f1','-r300 ', [path2 sep 'processed' sep 'resultplot_transmission_delta_f_non_norm' oname]);
+print('-depsc','-f1','-r300 ', [path2 sep 'processed' sep oname '_resultplot_transmission_delta_f_non_norm']);
 
 
 
